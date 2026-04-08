@@ -244,26 +244,29 @@ button:disabled {
 .social-links {
   display: flex;
   justify-content: center;
+  margin-top: -10px;
 }
 
 .social-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 100px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.6;
   transition: all 0.3s ease;
 }
 
+.social-icon svg {
+  margin-top: -1px; /* Optik asimetriyi düzeltir */
+}
+
 .social-icon:hover {
+  opacity: 1;
   color: white;
-  background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
 }
 
